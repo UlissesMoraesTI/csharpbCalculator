@@ -64,13 +64,13 @@ System.Environment.Exit(0);
 time = int.Parse(data.Substring(0, data.Length - 1));
 
 ## switch
- switch (type)
- {
-     case 's': TemporizadorEmSegundos(time); break;
-     case 'm': TemporizadorEmMinutos(time); break;
-     case '0': Sair(); break;
-     default: OpcaoInvalida(); break;
- }
+      switch (type)
+      {
+          case 's': TemporizadorEmSegundos(time); break;
+          case 'm': TemporizadorEmMinutos(time); break;
+          case '0': Sair(); break;
+          default: OpcaoInvalida(); break;
+      }
 
 ## Thead
 Thread.Sleep(1000);
@@ -79,13 +79,13 @@ Thread.Sleep(1000);
 data = Console.ReadLine().ToLower();
 
 ## While
-  while (currentTime != time * 60)
-  {
-      Console.Clear();
-      currentTime++;
-      Console.WriteLine(currentTime);
-      Thread.Sleep(1000);
-  }
+       while (currentTime != time * 60)
+       {
+           Console.Clear();
+           currentTime++;
+           Console.WriteLine(currentTime);
+           Thread.Sleep(1000);
+       }
 
   ## do While
 
