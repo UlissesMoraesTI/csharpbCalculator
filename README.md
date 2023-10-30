@@ -63,6 +63,8 @@ System.Environment.Exit(0);
 ## Substring
 time = int.Parse(data.Substring(0, data.Length - 1));
 
+## switch
+
 ## Thead
 Thread.Sleep(1000);
 
@@ -70,6 +72,13 @@ Thread.Sleep(1000);
 data = Console.ReadLine().ToLower();
 
 ## While
+ switch (type)
+ {
+     case 's': TemporizadorEmSegundos(time); break;
+     case 'm': TemporizadorEmMinutos(time); break;
+     case '0': Sair(); break;
+     default: OpcaoInvalida(); break;
+ }
 
   while (currentTime != time * 60)
   {
