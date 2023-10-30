@@ -33,3 +33,35 @@ C# Console - Projeto Calculadora
 ## Objetivo
 Aprender o básico sobre a linguagem C#.
 
+## Console
+Console.WriteLine("Linguagem C#");
+Console.ReadLine();
+Console.Clear();
+Console.ReadKey();
+
+## IF
+if (data.Length != 0)
+ {
+     type = char.Parse(data.Substring(data.Length - 1, 1));
+     time = int.Parse(data.Substring(0, data.Length - 1));
+ }
+ else
+ {
+     type = char.Parse(data.Substring(data.Length, 1));
+     time = int.Parse(data.Substring(0, data.Length));
+ }
+
+ ## Length
+ time = int.Parse(data.Substring(0, data.Length - 1));
+
+## System
+System.Environment.Exit(0);
+
+## Substring
+time = int.Parse(data.Substring(0, data.Length - 1));
+
+## Thead
+Thread.Sleep(1000);
+
+## ToLower
+data = Console.ReadLine().ToLower();
