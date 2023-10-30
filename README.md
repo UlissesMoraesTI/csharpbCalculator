@@ -80,38 +80,38 @@ while (currentTime != time * 60)
 
   ## do While
 
-do
-{
-      Console.Clear();
-      Console.WriteLine("#-----------------------------#");
-      Console.WriteLine("#     Menu  Temporizador      #");
-      Console.WriteLine("#-----------------------------#");
-      Console.WriteLine("[S] = Segundo => 10s(Segundos)#");
-      Console.WriteLine("[M] = Minuto  =>  1m(Minutos) #");
-      Console.WriteLine("[0] = Sair    =>  00(Sair)    #");
-      Console.WriteLine("#-----------------------------#");
+     do
+     {
+           Console.Clear();
+           Console.WriteLine("#-----------------------------#");
+           Console.WriteLine("#     Menu  Temporizador      #");
+           Console.WriteLine("#-----------------------------#");
+           Console.WriteLine("[S] = Segundo => 10s(Segundos)#");
+           Console.WriteLine("[M] = Minuto  =>  1m(Minutos) #");
+           Console.WriteLine("[0] = Sair    =>  00(Sair)    #");
+           Console.WriteLine("#-----------------------------#");
+          
+           Console.WriteLine("Quanto tempo deseja contar?");
+          
+           data = Console.ReadLine().ToLower();
      
-      Console.WriteLine("Quanto tempo deseja contar?");
-     
-      data = Console.ReadLine().ToLower();
+           if (data.Length != 0)
+           {
+               type = char.Parse(data.Substring(data.Length - 1, 1));
+               time = int.Parse(data.Substring(0, data.Length - 1));
+           }
+           else
+           {
+               type = char.Parse(data.Substring(data.Length, 1));
+               time = int.Parse(data.Substring(0, data.Length));
+           }
+          
+           switch (type)
+           {
+               case 's': TemporizadorEmSegundos(time); break;
+               case 'm': TemporizadorEmMinutos(time); break;
+               case '0': Sair(); break;
+               default: OpcaoInvalida(); break;
+           }
 
-      if (data.Length != 0)
-      {
-          type = char.Parse(data.Substring(data.Length - 1, 1));
-          time = int.Parse(data.Substring(0, data.Length - 1));
-      }
-      else
-      {
-          type = char.Parse(data.Substring(data.Length, 1));
-          time = int.Parse(data.Substring(0, data.Length));
-      }
-     
-      switch (type)
-      {
-          case 's': TemporizadorEmSegundos(time); break;
-          case 'm': TemporizadorEmMinutos(time); break;
-          case '0': Sair(); break;
-          default: OpcaoInvalida(); break;
-      }
-
-} while (data != "0");
+     } while (data != "0");
