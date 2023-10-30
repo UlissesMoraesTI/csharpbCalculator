@@ -6,8 +6,6 @@ C# Console - Projeto Calculadora
     <span> Comandos da Linguagem de Programação C#</span>
 </h1>
 
-## Objetivo
-Aprender o básico sobre a linguagem C#.
 
 ## Ferramentas
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=30A3DC)](https://docs.github.com/)
@@ -30,3 +28,8 @@ Aprender o básico sobre a linguagem C#.
 08. git commit -m ""
 
 09. git push origin master
+
+
+## Objetivo
+Aprender o básico sobre a linguagem C#.
+
