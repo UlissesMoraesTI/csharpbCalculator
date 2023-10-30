@@ -40,16 +40,16 @@ Console.Clear();
 Console.ReadKey();
 
 ## IF
-if (data.Length != 0)
- {
-     type = char.Parse(data.Substring(data.Length - 1, 1));
-     time = int.Parse(data.Substring(0, data.Length - 1));
- }
- else
- {
-     type = char.Parse(data.Substring(data.Length, 1));
-     time = int.Parse(data.Substring(0, data.Length));
- }
+     if (data.Length != 0)
+      {
+          type = char.Parse(data.Substring(data.Length - 1, 1));
+          time = int.Parse(data.Substring(0, data.Length - 1));
+      }
+      else
+      {
+          type = char.Parse(data.Substring(data.Length, 1));
+          time = int.Parse(data.Substring(0, data.Length));
+      }
 
  ## Length
  time = int.Parse(data.Substring(0, data.Length - 1));
