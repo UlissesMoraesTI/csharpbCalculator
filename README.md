@@ -69,8 +69,9 @@ Thread.Sleep(1000);
 ## ToLower
 data = Console.ReadLine().ToLower();
 
-## While | do While
-while (currentTime != time * 60)
+## While
+
+  while (currentTime != time * 60)
   {
       Console.Clear();
       currentTime++;
