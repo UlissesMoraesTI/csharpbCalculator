@@ -54,6 +54,9 @@ if (data.Length != 0)
  ## Length
  time = int.Parse(data.Substring(0, data.Length - 1));
 
+ ## Parse
+time = int.Parse(data.Substring(0, data.Length - 1));
+
 ## System
 System.Environment.Exit(0);
 
